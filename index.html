@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> My Blog </title>
+    <link rel="stylesheet" href="style.css">
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width= device-width, initial-scale = 1.0">
     <meta name ="author" content="Meryem">
@@ -10,9 +11,7 @@
     <meta http-equiv="refresh" content = "60">
 </head>
 <body   onload = "document.body.style.backgroundColor='pink'"
-        onresize = "document.body.style.backgroundColor='lightblue'"
-        onkeydown = "document.body.style.backgroundColor = 'white'"
-        onkeyup = "document.body.style.backgroundColor = 'purple'">
+        onresize = "document.body.style.backgroundColor='lightblue'" >
 
     <button id = "colorLoop" onclick = "changeColors()">Hello!!!</button>
 
@@ -35,12 +34,22 @@
     </script>
 
     Enter your name : <input type = "text" id = "name" onkeydown= "keydownFunction()">
-
-    <h1 style = "color: red">This is my blog !</h1>
+    <h1 style="text-align:center"><span id = "myblog">This is my blog !</span></h1>
+    <hr>
+    <nav class="navbar">
+        <ul>
+            <li><a href= "home.html">Home</a></li>
+            <li><a href= "about.html">About</a></li>
+            <li><a href= "lists.html">Lists</a></li>
+            <li><a href = "rps.html"> Games </a></li>
+        </ul>
+    </nav>
+    <h1><span id = "mk">Meryem Kılıçaslan</span></h1>
     <hr>
     <a href = "https://itu-itis.github.io/introduction-to-information-systems-2025-itu-itis25-kilicaslanme25/" target = _blank title = "This is my ITU class web page">Bee Page</a>
     <hr>
     <a href="mailto:mkilicaslan2009@gmail.com" target =_blank>You can mail me!</a>
+    <hr>
     <h1 style = "color:rgb(217, 28, 217)"> My Day </h1>
     A cat slept in my desk for three hours.
     <a href="https://en.wikipedia.org/wiki/Cat" target=_self title ="If you are a cat person this page is for you!">Cats</a>
@@ -56,7 +65,7 @@
         <br>
         I ate a cheesecake.
     </em>
-
+    <br>
     <h4> Things I Did </h4>         <!-- Not very true !-->
         <ul>
             <li> Watched a film </li>
@@ -66,7 +75,7 @@
             <li> Drank a coffee </li>
             <li> Ate an icecream</li>
         </ul>
-    
+    <br>
     I went to a concert this week.
     <br>
     <br>
@@ -76,7 +85,7 @@
     <video controls autoplay muted loop height="200">
         <source src = "cat_video.mp4">
     </video>
-
+    <hr>
     <table>
         <tr>
             <th> Item </th>
@@ -106,7 +115,7 @@
 
 
     </p>
-    <p style="background-color: aquamarine;"> This is normal text
+    <p id = "texttypes" > This is normal text
     <br> This is <b>bold</b>text
     <br> This is <b>bold</b>text
     <br> This is <i>italic</i>text
@@ -116,9 +125,16 @@
     <br> This is <del>deleted</del>text
     <br> This is <ins>inserted</ins>text
     <br> This is <sub>subscript</sub>text
-    <br> This is <sup>superscript</sup>text</p>
+    <br> This is <sup>superscript</sup>text
+    <br> This is <u>underlined</u>text
+    <br> This is <tt>monospaced</tt>text</p>
 
     <p>
+    <br>
+    <p>
+        <span style="background-color: olive;">This is a span sentence.</span>
+        <div style="background-color: olivedrab;">This is a div sentence.</div>
+    </p>
 
 
     </p>
